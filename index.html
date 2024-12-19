@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry, I Love You</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Intro Screen -->
+    <div class="screen" id="introScreen">
+        <h1>I'm Sorry ❤️</h1>
+        <p>Dear Love, I made a mistake, and I'm truly sorry.</p>
+        <p>Let's play a simple game to show how much I love you.</p>
+        <button onclick="startGame()">Start Game</button>
+    </div>
+
+    <!-- Game Screen -->
+    <div class="screen" id="gameScreen" style="display: none;">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="scoreBoard">Hearts Collected: <span id="score">0</span></div>
+    </div>
+
+    <!-- End Screen -->
+    <div class="screen" id="endScreen" style="display: none;">
+        <h1 id="endMessage"></h1>
+        <p>I love you and will do better. ❤️</p>
+        <button onclick="resetGame()">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
